@@ -1,26 +1,38 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <!-- <CardContainer></CardContainer> -->
+  <Nav></Nav>
+  <router-view/>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+hr{
+  width: 80%;
+  display: block;
+  border:.5px solid  black;
+  margin: 0% auto ;
+}
+*,body{
+  margin: 0px;
+  font-family: 'Inter', sans-serif;
+}
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  color: #2c3e50;
+  width: 100%;
+  display: block;
+  margin: 0px auto;
+}
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
+</style>
+
+<script>
+// import CardContainer from './components/CardContainer.vue'
+import Nav from './components/Nav.vue'
+export default{
+  components:{
+    // CardContainer,
+    Nav
   }
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
